@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YARSSR
+Comment=A RSS feed reader
+Comment[pl]=Czytnik RSS
+Exec=yarssr
+Type=Application
+Terminal=false
+StartupNotify=false
+Categories=GTK;GNOME;Network;News;
