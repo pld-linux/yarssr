@@ -13,6 +13,7 @@ BuildRequires:	perl-Gtk2-GladeXML
 BuildRequires:	perl-Gtk2-TrayIcon
 BuildRequires:	perl-XML-RSS
 Requires:	perl-Gnome2-VFS
+Requires:	perl-Gnome2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
