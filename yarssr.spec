@@ -17,20 +17,25 @@ Requires:	perl-Gnome2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-YARSSR is a GTK+ RSS Reader
+YARSSR is a GTK+ RSS Reader.
+
+%description -l pl
+YARSSR to czytnik informacji RSS dla GTK+.
 
 %prep
 %setup -q
 
 %build
 %{__make} \
-	DESTDIR=$RPM_BUILD_ROOT PREFIX=%{_prefix}
+	DESTDIR=$RPM_BUILD_ROOT \
+	PREFIX=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT PREFIX=%{_prefix}
+	DESTDIR=$RPM_BUILD_ROOT \
+	PREFIX=%{_prefix}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
