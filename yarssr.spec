@@ -28,8 +28,9 @@ obszarze powiadamiania.
 %setup -q -n %{name}-2.1
 
 %build
-
-%{__make} PREFIX=%{_prefix} LIBDIR=%{perl_vendorarch}
+%{__make} \
+	PREFIX=%{_prefix} \
+	LIBDIR=%{perl_vendorarch}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -52,6 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Yarssr.pm
 %dir %{perl_vendorarch}/Yarssr
 %{perl_vendorarch}/Yarssr/*
+%dir %{_datadir}/%{name}
 %{_datadir}/%{name}/%{name}.glade
-%{_datadir}/%{name}/pixmaps/*
+%{_datadir}/%{name}/pixmaps
 %{_desktopdir}/*
