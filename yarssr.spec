@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	A RSS feed reader
-Summary(pl):	Program do pobierania informacji w formacie RSS
+Summary(pl.UTF-8):   Program do pobierania informacji w formacie RSS
 Name:		yarssr
 Version:	0.2.2
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 YARSSR is a GTK+/GNOME RSS Reader nested in system tray.
 
-%description -l pl
-YARSSR to czytnik informacji RSS dla GTK+/GNOME dzia³aj±cy w
+%description -l pl.UTF-8
+YARSSR to czytnik informacji RSS dla GTK+/GNOME dziaÅ‚ajÄ…cy w
 obszarze powiadamiania.
 
 %prep
